@@ -3,21 +3,33 @@ name: Notify Telegram on push
 on:
   push:
     branches:
-      - '**'
+      - 'main'
   workflow_dispatch:
 
 jobs:
   notify:
     name: Send Telegram notification
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - name: Prepare short message (shell)
+        continue-on-error: true
         run: |
+          set +e
+          # Extract first-line commit message
           message="$(jq -r '.head_commit.message // ""' "$GITHUB_EVENT_PATH" | head -n1)"
+          # Extract author (fallback to actor)
+          author="$(jq -r '.head_commit.author.name // empty' "$GITHUB_EVENT_PATH")"
+          if [ -z "$author" ] || [ "$author" = "null" ]; then
+            author="$GITHUB_ACTOR"
+          fi
           # Escape HTML special chars
           message="${message//&/&amp;}"
           message="${message//</&lt;}"
           message="${message//>/&gt;}"
+          author="${author//&/&amp;}"
+          author="${author//</&lt;}"
+          author="${author//>/&gt;}"
           # Truncate to 80 chars
           max=80
           if [ ${#message} -gt $max ]; then
@@ -25,13 +37,18 @@ jobs:
           fi
           sha="${GITHUB_SHA:0:7}"
           url="https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
-          printf '%s@%s: <a href="%s">%s</a> — %s\n' "$GITHUB_REPOSITORY" "$GITHUB_REF_NAME" "$url" "$sha" "$message" > telegram_message.txt
+          # Use only repo name (drop org)
+          REPO="${GITHUB_REPOSITORY##*/}"
+          # Format: [repo] message — author (link with short sha)
+          printf '[%s] %s — %s <a href="%s">(%s)</a>\n' "$REPO" "$message" "$author" "$url" "$sha" > telegram_message.txt
       - name: Send Telegram message
+        continue-on-error: true
         env:
           TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TELEGRAM_TO }}
           TG_TOPIC_ID: ${{ secrets.TELEGRAM_TOPIC_ID }}
         run: |
+          set +e
           api="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
           extra=""
           if [ -n "$TG_TOPIC_ID" ]; then
