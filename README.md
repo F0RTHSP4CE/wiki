@@ -10,8 +10,8 @@ dateCreated: 2022-03-16T21:40:13.346Z
 
 Welcome to hackspace in Tbilisi!
 
-[Member roles](F0RTHSP4CE/Roles)
+[Member roles](F0RTHSP4CE/Roles.md)
 
-[Rules and principles](F0RTHSP4CE/Principles)
+[Rules and principles](F0RTHSP4CE/Principles.md)
 
-[Residency](F0RTHSP4CE/residency)
+[Residency](F0RTHSP4CE/residency.md)
