@@ -1,0 +1,46 @@
+name: Notify Telegram on push
+
+on:
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+jobs:
+  notify:
+    name: Send Telegram notification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare short message (shell)
+        run: |
+          message="$(jq -r '.head_commit.message // ""' "$GITHUB_EVENT_PATH" | head -n1)"
+          # Escape HTML special chars
+          message="${message//&/&amp;}"
+          message="${message//</&lt;}"
+          message="${message//>/&gt;}"
+          # Truncate to 80 chars
+          max=80
+          if [ ${#message} -gt $max ]; then
+            message="${message:0:$((max-1))}…"
+          fi
+          sha="${GITHUB_SHA:0:7}"
+          url="https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
+          printf '%s@%s: <a href="%s">%s</a> — %s\n' "$GITHUB_REPOSITORY" "$GITHUB_REF_NAME" "$url" "$sha" "$message" > telegram_message.txt
+      - name: Send Telegram message
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TELEGRAM_TO }}
+          TG_TOPIC_ID: ${{ secrets.TELEGRAM_TOPIC_ID }}
+        run: |
+          api="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
+          extra=""
+          if [ -n "$TG_TOPIC_ID" ]; then
+            extra="-d message_thread_id=${TG_TOPIC_ID}"
+          fi
+          curl -sS -X POST "$api" \
+            -d "chat_id=${TG_CHAT_ID}" \
+            --data-urlencode "text=$(cat telegram_message.txt)" \
+            -d "parse_mode=HTML" \
+            -d "disable_web_page_preview=true" \
+            $extra \
+            | jq -r 'select(.ok==false) | .description' && exit 1 || true
