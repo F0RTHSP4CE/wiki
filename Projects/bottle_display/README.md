@@ -1,14 +1,20 @@
 ---
 title: Bottle display
-description: 
+description: Unreassembled LED bottle display project
 published: true
-date: 2023-12-24T23:52:50.012Z
-tags: 
+date: 2026-03-24T12:00:00.000Z
+tags:
 editor: ckeditor
 dateCreated: 2023-04-15T16:58:56.885Z
 ---
 
-10.0.24.12, accessible from resident wifi network
+# Bottle display
+
+Current status: not assembled after the move.
+
+The old controller/network notes below describe the previous installation and are kept as historical documentation for rebuilding it later.
+
+Previous device address: `10.0.24.12`, accessible from resident Wi-Fi network.
 
 ![photo_2023-04-15_20-57-39.jpg](photo_2023-04-15_20-57-39.jpg)
 

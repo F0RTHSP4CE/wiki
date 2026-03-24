@@ -1,9 +1,9 @@
 ---
 title: Aquarium
-description: 
+description: Former entrance aquarium project
 published: true
-date: 2023-09-15T16:15:31.529Z
-tags: 
+date: 2026-03-24T12:00:00.000Z
+tags:
 editor: markdown
 dateCreated: 2023-09-14T18:45:34.771Z
 ---
@@ -15,12 +15,19 @@ Topic: [Private](https://t.me/c/1900643629/1731)
 
 ## Summary
 
-A freshwater aquarium stands at the entrance to the hackerspace and delights visitors.
-The fish are fed automatically at 12:00 and 20:00 every day.
-The plant light operates on a timer from 17:00 to 23:00.
-To prevent the fish from dying, the water is filtered through a large filter with a sponge.
-The water temperature is maintained by a thermostat.
-Carbon dioxide is supplied to the aquarium to accelerate plant growth.
+This project is no longer active in the space.
+
+The aquarium was removed after the fish died because of a gas-related mistake.
+
+Historically, this was a freshwater aquarium near the entrance. It used:
+
+- automatic feeding at 12:00 and 20:00 every day;
+- a plant light timer from 17:00 to 23:00;
+- a large sponge filter;
+- thermostat-controlled water temperature;
+- carbon dioxide supply for plant growth.
+
+The maintenance topic remains useful as historical context, but this page should not be read as "there is currently a working aquarium in F0".
 
 ## Gallery
 

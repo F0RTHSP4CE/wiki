@@ -1,12 +1,59 @@
 ---
 title: Butler (Smart Door, Physical Access Control System)
-description: 
+description: Entrance access control system
 published: true
-date: 2023-09-21T08:41:14.288Z
-tags: 
+date: 2026-03-24T12:00:00.000Z
+tags:
 editor: markdown
 dateCreated: 2023-09-15T06:27:33.709Z
 ---
+
+# Butler
+
+F0's door controller has gone through multiple rewrites.
+
+The current public history is:
+
+1. the original Butler stack handled the first generation of door control;
+2. it was later rewritten by `@rozetkinrobot` to support NFC and bank cards;
+3. after that it was rewritten again by `@Mike_Went`.
+
+The current repo is [F0RTHSP4CE/usbutler](https://github.com/F0RTHSP4CE/usbutler).
+
+## Current System Summary
+
+`usbutler/` is the latest Butler implementation.
+
+At a high level, it is a hardware-backed access-control system centered on one FastAPI app plus a few background device loops.
+
+### Runtime Shape
+
+- `docker-compose.yml` runs a privileged container with host networking and direct access to USB smart-card devices and `/dev/gpiochip0`
+- `Dockerfile` installs `pyscard`, `pcscd`, `gpiod`, FastAPI, and SQLAlchemy
+- `supervisord.conf` starts `pcscd`, a udev monitor script, and `uvicorn`
+- `app/main.py` creates DB tables, initializes shared services, starts GPIO button monitoring, starts the background card-polling thread, and mounts the HTTP routers
+
+### Application Layout
+
+- routers in `app/routers/` define HTTP boundaries for users, doors, identifiers, POS, and UI
+- `app/dependencies.py` is the main composition root for auth, DB sessions, and request-scoped services
+- `app/services/` contains both DB-oriented services and hardware-facing services
+- SQLAlchemy persistence lives in `app/database.py` plus models in `app/models/`
+- API contracts live in `app/schemas/`
+- the admin UI is server-rendered Jinja in `app/templates/`
+
+### Main Control Flows
+
+- card flow: NFC reader polling reads a PAN or UID, auth maps it to an active user, Butler opens the default door, records a `DoorEvent`, and sends a Telegram notification
+- button flow: GPIO monitoring watches configured door pins, debounces presses, stores `BUTTON` events, and sends notifications
+
+### Auth Split
+
+- API routes use `X-API-Key`
+- POS routes use `X-POS-Secret`
+- UI routes use an admin cookie
+
+The architecture notes below describe the older design and should be treated as partial historical documentation, not as a precise description of the current software layout.
 
 # Architecture
 ## Hardware part
@@ -36,7 +83,7 @@ Main Python script to send relay a trigger and trigger notify scripts
 
 ###NFC-reader
 https://github.com/f0rthsp4ce/doorLock/blob/dev/bin/butlerNFC/README.md
-Python script to check local storage for NFC match. Works only with static NFC for now.
+Earlier Python script to check local storage for NFC match.
 Triggers **lock script**
 
 ###ESC button

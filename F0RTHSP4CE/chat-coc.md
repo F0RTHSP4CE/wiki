@@ -1,9 +1,9 @@
 ---
 title: Chat Code of Conduct
-description: 
+description:
 published: true
 date: 2023-12-23T04:38:38.686Z
-tags: 
+tags:
 editor: markdown
 dateCreated: 2023-12-23T04:38:32.236Z
 ---
@@ -14,8 +14,8 @@ To add more transparency to our chat policy we would like to introduce the follo
 
 #### You will have your account banned from F0 chat for the following actions:
 
-* Spam (e.g. dating sites, ponzi schemes, DOS). 
-* Pornography, gore, violent materials. 
+* Spam (e.g. dating sites, ponzi schemes, DOS).
+* Pornography, gore, violent materials.
 * Aggressive behavior towards any group of people, or individuals. This does not include constructive criticism.
 * Political discussions.
 
