@@ -47,30 +47,39 @@ The basic principles of the community are:
 - Leave common areas workable for the next person.
 - Return tools and materials to their place.
 - Do not quietly occupy shared space forever with your personal mess or long-term sprawl.
-- If you break something, say so promptly.
+- If you break something, say so promptly. There is "broken items" topic in the internal chat, send photo there.
 
 ### Shared Stuff
 
-- Ask before using anything that is not clearly shared.
+- Private stuff is marked with a **red tape** or a **red sticker with a username**.
 - Do not touch personal projects, labeled items, private storage, or resident-only areas without permission.
-- Do not move, borrow, consume, reconfigure, or take apart things casually just because they are physically present.
+- Shared stuff can be marked with a **white tape** + username.
+- F0 property is usually unmarked.
+- Ask before using anything that is not clearly shared.
+- Do not move, borrow, consume, reconfigure, or take apart things casually just because they are physically present. They might belong to someone.
 - Do not touch dangerous chemicals or suspicious unknown substances unless you are the right person to handle them safely.
 
 ### Safety
 
 - If you do not understand a tool, process, setup, or chemical, stop and ask.
 - Do not use dangerous tools or equipment while intoxicated.
-- If somebody is too intoxicated to use the space safely, the priority is safety.
+- If somebody is too intoxicated to use the space safely, they should leave.
 - If a task is hazardous enough that you would not want to be alone when it goes wrong, do not do it alone.
 - Do not keep illegal items on the premises.
 - If something is broken, unsafe, overheating, smoking, or otherwise sketchy, deal with the immediate danger first and then report it.
 
-### Smoking, Air, And Adult Content
+### Acohol
+- Do not use dangerous machinery while intoxicated (!) Safety first.
+- It's forbiddden to store and display alcohol in the public fridge
+- You are allowed to store alcohol in the private resident fridge
+- If your intoxication is visible and someone asks you to leave, you should.
+- It's forbidden to be in the space alone while intoxicated.
 
-- If you smoke or vape, do it on the sidewalk away from the doorway.
-- Do not smoke on the back patio.
-- Do not normalize smoke, fumes, or intoxicants in a way that makes the space unusable for other people.
-- Limit access to adult content in the space, even on personal devices.
+### Smoking, Air
+
+- Smoke only on the **balcony** or in front of the **backyard door**. Always close the door so the smoke doesn't go inside.
+- Technically it's safer to smoke non-tobacco substances on the balcony, because it's considered a perosnal property in the Georgia. 
+- Heavily limit using aerosols or products that produce smoke, fumes, or intoxicants in a way that makes the space unusable for other people. 
 
 ### Guests And Hosting
 
