@@ -2,10 +2,10 @@
 title: Lab equipment automation
 description: Remote control and scripting of equipment in electronics room
 published: true
-date: 2026-04-07T01:49:00.000Z
+date: 2026-04-20T20:53:00.000Z
 tags:
 editor: markdown
-dateCreated: 22026-04-07T01:49:00.000Z
+dateCreated: 2026-04-07T01:49:00.000Z
 ---
 
 # Lab equipment automation
@@ -155,3 +155,18 @@ This is how everything is wired together:
     -> `raw TCP at 10.0.24.121:2001 via RPi`
   - `Oscilloscope` -> `Ethernet switch`
   - `RPi` -> `Ethernet switch`
+
+## Notes
+
+### ITECH IT8512A+ smart load
+The load is connected via a weird interface. It uses the same connector and
+pinout as RS-232 (with +15/-15 V on data lines), but uses TTL levels (0/+5 V).
+**Only use the specially marked 5V pseudo-RS-232 adapter.**
+
+It's based on an `STM32F103CBT6` microcontroller. It's the same one that's
+featured on so-called STM32 "blue pill" boards, but with 128KiB of flash instead
+of 64 (`CB` instead of `C8`). A 2.54mm header has been soldered to the main
+board for easy flashing; the firmware was dumped and modified to show
+"F0RTHSP4CE" instead of "SYSTEM INIT" on startup. Original firmware and option
+bytes are in `load_fw.bin` and `load_ob.json`. Modified firmware is in
+`load_fw_modified.bin`. Option bytes have not been modified.
