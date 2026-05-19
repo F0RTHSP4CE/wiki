@@ -68,7 +68,7 @@ The basic principles of the community are:
 - Do not keep illegal items on the premises.
 - If something is broken, unsafe, overheating, smoking, or otherwise sketchy, deal with the immediate danger first and then report it.
 
-### Acohol
+### Alcohol 99.5%
 - Do not use dangerous machinery while intoxicated (!) Safety first.
 - It's forbiddden to store and display alcohol in the public fridge
 - You are allowed to store alcohol in the private resident fridge
