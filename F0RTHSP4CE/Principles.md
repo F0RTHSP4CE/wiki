@@ -43,7 +43,7 @@ The basic principles of the community are:
 
 ### Shared Space
 
-- Pull your own weight. Clean up after yourself.
+- Pull your own weight. **Clean up after yourself!**
 - Leave common areas workable for the next person.
 - Return tools and materials to their place.
 - Do not quietly occupy shared space forever with your personal mess or long-term sprawl.
