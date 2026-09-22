@@ -102,21 +102,25 @@ The current public baseline is `$30` per month. The exact amount can still chang
 Practical rule:
 
 - the donation box is for casual donations and small on-the-spot support;
-- regular member dues should go through `@Mike_Went`, not as an anonymous "hope somebody notices" donation.
-
-If you need to pay your member fee, coordinate it with `@Mike_Went`.
-
+- pay the monthly member fee through the `@F0RTHSP4CE_bot` Telegram bot or at [refinance.f0rth.space](https://refinance.f0rth.space/);
 The donation box is still useful for casual support, drinks, and small spontaneous donations, but it is not the default path for member dues.
 
 ## Internal Orientation
 
-Once you are added to the internal Telegram side, the highest-signal thing to watch is:
+After you join the internal Telegram group:
 
-- `F0RTHSP4CE | pins`
+1. read the internal chat and find the applicable topic;
+2. read the wiki for documented rules and procedures;
+3. ask members and residents when the answer is not clear.
 
-That channel exists so you do not need to read every internal topic constantly. Important pinned messages from internal chats and task threads are forwarded there.
+## What To Do In The First Month
 
-You should also know that practical member questions usually get resolved through the relevant topic plus a real human, not by silently guessing.
+- connect with people;
+- do your project;
+- buy useful things for the space after you read the shopping list;
+- complete quests through the `/quests` bot command;
+- donate useful equipment;
+- help other people with their projects and ask for help with yours.
 
 ## If You Want To Run An Event As A Member
 
@@ -135,9 +139,9 @@ Then follow [Events policy](events-policy.md).
 ## Quick Practical Answers
 
 - "Where can I not go?" By default: not the resident room without resident permission, and not anywhere clearly private, specially labeled, or infrastructure-sensitive.
-- "Where do I put money?" Casual support goes to the donation box; member dues go through `@Mike_Went`.
+- "Where do I put money?" Casual support goes to the donation box; member fees go through `@F0RTHSP4CE_bot` or `refinance.f0rth.space`.
 - "How do I find a resident for an event?" Ask directly and early; use known active residents instead of waiting until announcement day.
-- "What internal chat should I actually watch?" `F0RTHSP4CE | pins`.
+- "Where do I ask a practical question?" Find the applicable internal chat topic, read the wiki, and then ask members or residents.
 
 ## If You Are Interested
 

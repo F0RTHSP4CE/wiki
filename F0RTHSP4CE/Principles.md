@@ -51,12 +51,13 @@ The basic principles of the community are:
 
 ### Shared Stuff
 
-- Private stuff is marked with a **red tape** or a **red sticker with a username**.
+- Private stuff is marked with **RED TAPE**, a **RED STICKER**, or a **YELLOW STICKER with a username**.
 - Do not touch personal projects, labeled items, private storage, or resident-only areas without permission.
-- Shared stuff can be marked with a **white tape** + username.
+- Shared stuff can be marked with **GREEN STICKER** or **WHITE TAPE** and a username.
 - F0 property is usually unmarked.
 - Ask before using anything that is not clearly shared.
 - Do not move, borrow, consume, reconfigure, or take apart things casually just because they are physically present. They might belong to someone.
+- When you borrow an item, take a photograph and send it to the `Borrowed items` topic. Return the item immediately when someone asks.
 - Do not touch dangerous chemicals or suspicious unknown substances unless you are the right person to handle them safely.
 
 ### Safety

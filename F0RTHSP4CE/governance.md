@@ -15,7 +15,7 @@ F0RTHSP4CE is run as a horizontal community space, not as a service business.
 The practical governance mix is:
 
 - principles;
-- do-ocracy for small and reversible things;
+- do-ocracy for small-medium or reversible changes;
 - discussion in public/internal threads;
 - regular Tuesday meetings;
 - resident votes when a decision needs to be formalized.
@@ -42,7 +42,13 @@ But do-ocracy is not a free pass for:
 - creating a mess and calling it initiative;
 - forcing everybody else to live with your experiment.
 
-For proposals that affect other people or the space more broadly, the normal practice is to open a topic, describe the proposal clearly, and give people time to react.
+If a change is small-medium or reversible, do it and be responsible for the result. Moving a table and installing your project are examples.
+
+For a large and irreversible change:
+
+1. ask in the internal chat;
+2. make a poll;
+3. do the change after the poll.
 
 ## Weekly Meetings
 

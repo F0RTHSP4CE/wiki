@@ -33,6 +33,8 @@ The short version is still the same:
 - Ask before using anything that is not clearly shared.
 - Owner labels, resident-only markings, and red-tape markings mean "do not touch without permission".
 - Do not move, reconfigure, borrow, or consume things casually just because they are physically present.
+- When you borrow an item, take a photograph and send it to the `Borrowed items` topic.
+- Return the item immediately when someone asks.
 - If you break something, say so promptly.
 
 ## Shared Space

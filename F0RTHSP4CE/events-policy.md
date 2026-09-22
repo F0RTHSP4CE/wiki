@@ -73,7 +73,7 @@ Normal practice is:
 - make the proposal visible before the event, not after people have already made plans;
 - avoid collisions with other events or space use;
 - add the event to the public calendar;
-- publish a public announcement in the channel.
+- optionally publish a public announcement in the FØ channel.
 
 For ordinary events, waiting at least about 24 hours before public posting is a sensible minimum. For larger, stranger, or potentially contentious events, use more lead time. In practice, a few days of visibility is much better than a same-day announcement.
 
