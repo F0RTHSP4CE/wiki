@@ -45,7 +45,17 @@ The current public baseline is:
 
 These numbers can change as the real situation of the space changes.
 
-Current practical payment path for both member and resident fees: coordinate payment through `@Mike_Went`.
+Fee is paid through the `@F0RTHSP4CE_bot` Telegram bot or at [refinance.f0rth.space](https://refinance.f0rth.space/). Top up your balance, invoices would be created each month and paid automatically.
+
+## REFINANCE
+
+Each member and resident has a balance in REFINANCE.
+
+You can:
+
+- transfer money to another member or resident;
+- create a split to buy an expensive item with other people;
+- pay the monthly fee from the same balance.
 
 ## What Those Contributions Support
 
@@ -85,8 +95,8 @@ This page does not include:
 
 - private payment details;
 - private reimbursement details;
-- internal debt tracking;
-- internal access to finance tools.
+- private transaction details;
+- credentials for finance tools.
 
 Those belong in the private/internal documentation.
 

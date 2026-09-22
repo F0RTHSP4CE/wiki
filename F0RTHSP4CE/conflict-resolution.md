@@ -16,11 +16,9 @@ F0 is a horizontal community space. That means conflict will happen. The goal is
 
 When something goes wrong:
 
-1. try direct and respectful conversation if it is safe;
-2. move the conflict out of the main channel / main room if it is escalating;
-3. disengage if people are heated;
-4. involve a neutral resident or mediator if needed;
-5. if there is a safety issue, stop the immediate problem first.
+1. speak with the person privately when it is safe;
+2. speak with a neutral mediator if the private conversation does not resolve the conflict;
+3. tell the community if mediation does not resolve the conflict or the problem affects the community.
 
 ## Start Direct, But Not Recklessly
 

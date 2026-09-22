@@ -38,7 +38,7 @@ If a task is hazardous enough that you would really not want to be alone when it
 
 ## First Aid
 
-There is a first aid kit in the space. Recent reports place it on the shelf in the chill zone under the aquarium.
+The first aid kit is in the open-space.
 
 If you are running a workshop or hosting visitors:
 
